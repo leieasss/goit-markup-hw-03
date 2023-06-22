@@ -55,6 +55,10 @@ address {
     border: none;
 }
 
+.visually-hidden {
+    visibility: hidden;
+}
+
 body   {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
