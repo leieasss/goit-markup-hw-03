@@ -57,6 +57,7 @@ address {
 
 .visually-hidden {
     visibility: hidden;
+    display: none;
 }
 
 body   {
