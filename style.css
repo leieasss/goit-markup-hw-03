@@ -78,9 +78,7 @@ body   {
 
     /* HEADER */
    /*  Logo*/
-header{
-    border-bottom: 1px solid #e7e9fc;
-}
+
 .page-header {
     /* padding: 24px 0; */
     border-bottom: 1px solid#e7e9fc;
@@ -335,6 +333,10 @@ header{
 
 }
 
+.list__four__img{
+    /* margin-bottom:32px; */
+}
+
 
 .section-four   {
     background: #F4F4FD;
@@ -385,6 +387,9 @@ header{
 
 .footer {
     padding: 100px 0;
+}    
+.container-footer{
+    
 
 }
 .logo-footer {
