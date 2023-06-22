@@ -40,14 +40,21 @@ address {
     font-style: normal;
 }
 
-.list  {  
+/* .list  {  
     list-style: none ;
-}
+} */
 
 .link   {
     text-decoration: none;
 }
 
+.button-btn {
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
 
 body   {
     font-family: 'Roboto', sans-serif;
@@ -57,12 +64,32 @@ body   {
     font-weight: 500;
     color:var(--primary-second-background);
     background-color: #ffffff;
-    /* background-color:var(--primary-backgraund); */
-   
-    
 }
+   .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+   }
+    
+
     /* HEADER */
    /*  Logo*/
+
+.page-header {
+    /* padding: 24px 0; */
+    border-bottom: 1px solid#e7e9fc;
+}
+
+.heder__conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
 
 
 .logo-web {
@@ -75,7 +102,7 @@ body   {
     color: var(--primary-text);
 }
     
-/* .logo-studio, */
+/* .logo-studio */
 .logo    {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -96,15 +123,29 @@ body   {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-second-text);
+     display: block;
 }
 
+.menu-link:not(:last-child) { 
+    margin-right: 0;
+}
+.link-menu{
+    padding: 24px 0;
+}
+
+.menu-address__item:not(:last-child){
+     margin: 0 40px 0 0;
+}
 
 .link-menu:hover,
 .link-menu:focus   {
     color: #404BBF;
 }
 
-
+.header-adress__menu {
+    display: flex;
+    
+}
 .contact-phone-number,
 .contact-email  {
     letter-spacing: 0.02em;
@@ -137,6 +178,17 @@ body   {
     color: #404BBF;
 }
 /* Main Contant */ /* Hero */
+.hero{
+    padding: 188px  0;
+}
+
+.hero__conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+
 .hero,
 .footer {
     background: #2E2F42;
@@ -149,6 +201,9 @@ body   {
     text-align: center;
     color: #FFFFFF; 
 }
+.hero__title {
+    max-width: 496px;
+}
 
 .button-btn {
     font-family: "Roboto", sans-serif;
@@ -159,6 +214,10 @@ body   {
     color: #FFFFFF;
     cursor: pointer;
     letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
 } 
 
 .button-btn:hover,
@@ -169,12 +228,39 @@ body   {
    
 /* Section 2 */
 
+.second-section {
+    padding: 120px 0 120px;
+}
+
+.second__container {
+    max-width: 1158px;
+    /* padding: 120px 0; */
+} 
+
+.list__sect__second {
+    display: flex;
+    justify-content:space-between;
+    gap:24px;
+
+}
+
+.sect-second__item {
+    /* max-width:264px; */
+    width: calc((100% - 72px) / 4);
+        
+}
+.sect-second__item:not(:last-child) {
+    margin-right: 0;
+}
+
 .second-section-title   {
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #2E2F42;
+    margin-bottom: 8px;
+}
 }
 
 .second-section-text {
@@ -186,6 +272,11 @@ body   {
 }
 
         /* Sektion 3  What are we doing*/
+       
+.secrion__three {
+    padding: 0 0 120px 0;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -194,19 +285,59 @@ body   {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom:72px;
 }
 
+.container__three {
+     max-width:1158px;
+}
+
+
+.container__three_list {
+    display: flex;
+    justify-content: space-between;
+    gap:24px;
+}
+ 
+.third__item {
+    max-width:360px;
+} 
+
+
 /* < !-- Section4 Our Team--> */
+
+
+.conteiner_four__list {
+    display: flex;
+    justify-content:space-between;
+    gap:24px;
+
+}
+
+
 
 .section-four   {
     background: #F4F4FD;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding:120px 0;
 }
-.item-fou-list {
-    background-color: #FFFFFF
+.item-four-list {
+    background-color: #FFFFFF;
+     border-radius: 0px 0px 4px 4px;
+    width:calc((100% - 3 * 24px)/3);
+    display: flex;
+    flex-direction: column;   
 
 }
+
+.section_four__item {
+    padding: 32px 16px;
+    /* border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; */
+}          
 
 .name-working   {
     font-weight: 500;
@@ -221,10 +352,17 @@ body   {
     letter-spacing: 0.02em;
     font-weight: 400;
     color: #434455;
+    margin-bottom: 8px;
+    text-align: center;
 
 }
 
     /* FOOTER */
+
+    .footer {
+    padding: 100px 0;
+}    
+
 .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -232,8 +370,15 @@ body   {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-third-text)
+    color: var(--primary-third-text);
+     margin-bottom:15px;
+    }
+
+    .logo-footer__link {
+    display: inline-block;
+    margin-bottom: 16px;
 }
+
 .logo-studio-footer   {
     /* font-weight: 800;
     font-size: 18px;
@@ -263,23 +408,36 @@ body   {
 
 
 /* =============PORTFOLIO============= */
+
+.works {
+    padding: 96px 0 120px;
+    margin-bottom: 120px;
+}
+
 .filter__list {
     list-style: none;
+    margin-bottom:72px;
+    display: flex;
+    gap:24px;
+    justify-content:center;
+    
 }
 
 
 
 .item-filter__btn   {
-    border: 1px solid #E7E9FC;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    cursor: pointer;
-    letter-spacing: 0.04em;
     color: var(--primary-text);
     background-color: var(--primary-third-text);
+    cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    padding:12px 24px 12px;
 }
 
 .ifp__btn {
@@ -290,10 +448,31 @@ body   {
 .item-filter__btn:focus {
     background: #404BBF;
     color: #FFFFFF;
+      border: 1px solid transparent;
+}
+
+.ifp__btn:hover,
+.ifp__btn:focus {
+    border: 1px solid transparent;
 }
 
 .works-list {
     list-style: none;
+     display: flex;
+    flex-wrap:wrap;
+    gap:24px;
+    row-gap: 48px;
+}
+
+.item-works {
+    width: calc((100% - 48px) / 3);
+   flex-shrink:0;
+}
+
+.link__container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top:none;
 }
 
 .item-works__title  {
@@ -303,6 +482,7 @@ body   {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 .item-works__text {
     font-weight: 400;
