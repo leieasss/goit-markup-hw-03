@@ -412,6 +412,7 @@ body   {
     margin-bottom: 16px;
 }
 
+
 .logo-studio-footer   {
     /* font-weight: 800;
     font-size: 18px;
@@ -443,7 +444,7 @@ body   {
 /* =============PORTFOLIO============= */
 .works {
     padding: 96px 0 120px;
-    margin-bottom: 120px;
+    
 }
 
 .filter__list {
